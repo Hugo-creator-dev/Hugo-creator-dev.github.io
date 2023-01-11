@@ -251,6 +251,11 @@
                     }, before_end)
                 }
             }
+            
+            function fullscreen()
+            {
+                if (!document.fullscreen) document.querySelector("html").requestFullscreen(); else document.exitFullscreen()
+            }
 
 
         }
@@ -265,7 +270,7 @@
         <article id="card">
             <img src="https://img.icons8.com/material/480/contactless-payment.png" class="wifi" onclick="pay(this)">
             <img src="https://cdn-icons-png.flaticon.com/512/105/105603.png" class="puce" onclick="switch_color(this)">
-            <img src="https://cdn-icons-png.flaticon.com/512/21/21051.png" class="rotate" onclick="pay(this)">
+            <img src="https://cdn-icons-png.flaticon.com/512/21/21051.png" class="rotate" onclick="fullscreen(this)">
             <section class="screen">
                 <article id="menu">
                     <h1>1234 5678 9000 0000</h1>
